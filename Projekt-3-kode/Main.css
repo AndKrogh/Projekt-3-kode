@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Overpass:wght@100;200&family=Poppins:wght@400;700&display=swap');
 
-
+/*ændringer hele siden*/
 *{
     padding: 0%;
     margin: 0%;
@@ -18,25 +18,34 @@ body {
     font-family: 'overpass', sans-serif;
 }
 
+/*navigationsbar*/
 
 nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
     background-color: peachpuff;
     height: 100px;
     width: 100%;
+    z-index: 1;
 }
 
 nav ul {
-   float: right; 
+   justify-content: right;
    margin-right: 100px;
+   padding-top: 7px;
 }
 
 nav ul li {
     display: inline-block;
-    line-height: 80px;
     margin: 0 10px;
 }
 
 nav ul li a {
+    margin: 15px;
     color: black;
     font-size: 20px;
     padding: 18px 13px;
@@ -51,8 +60,7 @@ nav ul li a {
 
 .checkbtn {
     font-size: 30px;
-    color: white;
-    float: right;
+    color: #F8F5F1;
     line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
@@ -61,48 +69,67 @@ nav ul li a {
 
 #checkbox {
     display: none;
+    z-index: 3;
 }
 
-.logo {
-    margin: 0.5em 100px;
-}
 
 .cta1 {
-    float: right;
     line-height: 80px;
     margin-right: 30px;
-    
 }
 
 button {
-    color: white;
+    color: #F8F5F1;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
     white-space: nowrap;
     width: 20px;
     height: 1px;
-    padding: 18px 150px 40px 25px;
+    padding: 18px 150px 40px 30px;
     background-color: #5aa897;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    order: 1;
+}
 
+button:hover {
+    background-color: #F8F5F1;
+    color: #5aa897;
 }
 
 .logo {
-  width: 6em;
-  height: 6em;
+  margin: 0.5em 100px;
+  width: 5em;
+  height: 5em;
   margin-right: auto;
   cursor: pointer;
 }
 
+#top, #mid, #bot, #footer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/*forside tekst*/
+.fp {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    
+}
 
 .h1 {
     font-family: 'cabin', sans-serif;
     font-size: 2rem;
     margin: 3em 1em;
+    align-items: center;
     
 }
 
@@ -113,6 +140,24 @@ h1 span {
     margin: 3em 1em;
 }
 
+
+/*om mig*/
+
+#mid {
+    margin: 120px 0 120px 0;
+}
+
+.container-fp {
+     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url('magical-4466597_1280.jpg');
+    background-size: cover;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
 h2 {
      font-family: 'cabin', sans-serif;
      margin: 3em 1em;
@@ -123,8 +168,31 @@ p {
 }
 
 
-.tekstbox1, .tekstbox2, .tekstbox3, .tekstbox4 {
-    width:30%;
+
+.container-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url('Mønster.png');
+    background-size: cover;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    
+
+}
+
+
+.container-tekstbox2{
+width: 100%;
+height: 100%;
+justify-content: center;
+
+}
+.tekstbox1 {
+    width:60%;
+    justify-items: center;
     background-color: #5aa897;
     border-radius: 10px;
     flex-direction: column;
@@ -132,90 +200,226 @@ p {
     column-gap: 0px 30px;
 }
 
-.tekstbox2, .tekstbox4 {
-position: relative;
-left: 60%;
+.selvportræt1{
+    display: block;
+    margin:30px auto 30px auto;
+    padding: 40px 40px 40px 40px;
+    max-width: 100%;
+    max-height: 350px;
+    object-fit: contain;
 }
 
-.tekstbox1, .tekstbox3 {
+
+
+
+/*Portfolio tekstboxe med billeder*/
+
+#bot {
+margin:120px 0 120px 0;
+
+}
+.tekstbox1-portfolio, .tekstbox2-portfolio, .tekstbox3-portfolio, .tekstbox4-portfolio {
+    display: block;
+    width:20%;
+    background-color: #5aa897;
+    border-radius: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 0px 30px;
+}
+
+.tekstbox2-portfolio, .tekstbox4-portfolio {
+position: relative;
+left: 56%;
+width: 800px;
+}
+
+.tekstbox1-portfolio, .tekstbox3-portfolio {
     position: relative;
-    left: 10%;
+    left: 2%;
+    width: 800px;
+}
+
+.overskrift {
+    text-align: center;
+}
+
+.text {
+    word-break: break-all;
 }
 
 .kollage {
     display: block;
+    justify-items: center;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 30px 30px 30px;
+    width: 500px;
+    height: 500px;
+}
+
+.animation-container{
+    display: block;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px 200px 200px;
     width: 100%;
     height: 100%;
 }
 
-.tyr{
-	 margin-left: auto;
-    margin-right: auto;
-    padding: 30px 30px 30px 30px;
-    width: 100%;
-    height: 100%;
+.tyr {
+	display: none;
 }
 
 .sprite {
-	display: block;
+    display: block;
+    margin-left: 140px;
+    margin-right: auto;
+    padding: 30px 30px 30px 30px;
+	position: absolute;
+	width: 157px;
+	height: 200px;
+	background: url('spritesheet tyr1.png') 0 0 no-repeat; 	 
+	animation: play 1.2s steps(7) infinite;
+}
+@keyframes play {
+	0%{background-position:0px;}
+   100% { background-position: -1100px; }
+}
+
+.selvportræt2 {
+   display: block;
+   justify-items: center;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 30px 30px 30px;
+    width: 650px;
+    height: 500px;
+}
+
+
+/*Kontaktformular*/
+
+.container-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100vh;
+    padding: 20px 100px;
+}
+
+.container-box::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.container-box {
+    max-width: 100%;
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-image: linear-gradient(peachpuff,#F8A488);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: peachpuff;
+}
+
+
+.venstre {
+    background-image:url(_DSC4046.jpg) ;
+    background-repeat: no-repeat;
     height: 100%;
-	background: url('A:\Multimediedesigner\Projekt 3 eksamen\Kode\Projekt-3-kode\Projekt-3-kode\Tyr-animation-css\spritesheet tyr.png') 0 0 no-repeat; 	 
-	animation: play 1s steps(7) infinite;
-}
-@keyframes play {
-	0%{background-position:0%;}
-   100% { background-position: ; }
+    width: 100%;
+    background-size: contain;
+    margin-top: 300px;
+   
 }
 
-.mønster {
- padding-top: 2em;
- width: 100%;
- height: 100%; 
- opacity: 35%; 
+.højre {
+    padding: 25px 40px;
 }
 
-.stjernetegn {
- width: 50%;
- height: 50%;  
- margin: 0 1em;
+h3 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.container{
-	max-width: 1170px;
+h3::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) ;
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #5aa897;
+}
+
+.felt {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border:2px solid #45526C;
+    background-color: #F8F5F1 ;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.felt:hover {
+    background-color: #F8A488;
+}
+
+.btn{
+    width: 100%;
+    justify-content: center;
+    padding: 15px 10px 30px 10px;
+
+}
+
+/*Footeren*/
+.footer-box{
+    position: relative;
+    background-color: #F8A488;
+    padding: 70px 0;
+	width: 100%;
 	margin:auto;
     height: auto;
 }
+
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
 }
-ul{
-	list-style: none;
-}
-.footer{
-	background-color: #45526C;
-    padding: 70px 0;
-}
+
+
+
 .footer-col{
    width: 33%;
    padding: 0 45px 0 45px;
    	word-break: break-all;
 }
+
+
 .footer-col h4{
 	font-size: 18px;
-	color: #ffffff;
+	color: #45526C;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
 }
+
+
 .footer-col h4::before{
 	content: '';
 	position: absolute;
@@ -226,31 +430,39 @@ ul{
 	box-sizing: border-box;
 	width: 50px;
 }
+
+
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
+
+
 .footer-col ul li a{
 
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #45526C;
 	text-decoration: none;
 	font-weight: 300;
-	color: #bbbbbb;
+	color: #45526C;
 	display: block;
 	transition: all 0.3s ease;
 	
 }
+
+
 .footer-col ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
 	word-break: break-all;
 }
+
+
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
-	background-color: rgba(255,255,255,0.2);
+	background-color: #45526C;
 	margin:0 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
@@ -258,57 +470,27 @@ ul{
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
+
+
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
 
 }
 
-@media screen and (max-width: 1280px){
+
+
+/*Responsivitet på siden*/
+@media screen and (max-width: 1200px){
     nav ul li a {
         font-size: 16px;
     }
+    .checkbtn {
 
-        .stjernetegn {
-        padding: 2em;
-        width: 100%;
-        height: 100%;  
-        margin: 1em 1em;
-    }
-
-    .mønster {
-        padding-top: 2em;
-        width: 100%;
-        height: 100%;  
-        margin: 1em 0em;
-        opacity: 35%; 
-    }
-        .logo {
-    width: 5em;
-    height: 5em;
-    margin-right: auto;
-    cursor: pointer;
-    }
-
-    .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-    }
-
-   
-}
-
-@media screen and (max-width: 900px){
-
-        .logo {
-    width: 4em;
-    height: 4em;
-    margin-right: auto;
-    cursor: pointer;
-    }
-        .checkbtn {
-        display: block;
-        margin-right: 100px;
+      position: fixed;
+     display: block;
+     margin-left: 800px ;
+     margin-right: 30px;
     }
 
     ul {
@@ -319,7 +501,8 @@ ul{
         top: 80px;
         left:-100%;
         text-align: center;
-        transition: all 0.5s;
+        transition: all 0.7s;
+        z-index: 2;
     }
 
     nav ul li {
@@ -341,6 +524,7 @@ ul{
         left: 0;
     }
 
+
     .cta1 {
         float: right;
         line-height: 70px;
@@ -348,20 +532,172 @@ ul{
         font-size: 16px
     }
 
-    .stjernetegn {
-    padding: 2em;
-    width: 100%;
-    height: 100%;  
-    margin: 1em 1em;
+    .logo {
+    width: 5em;
+    height: 5em;
+    margin-right: auto;
+    cursor: pointer;
     }
 
-    .mønster {
-        padding-top: 2em;
-        width: 100%;
-        height: 100%;  
-        margin: 1em 0em;
-        opacity: 35%; 
+    .container-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url('Mønster.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
     }
+
+    .container-box{
+        grid-template-columns: 1fr;
+    }
+
+    .venstre {
+        height: 200px;
+    }
+
+
+
+
+    .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+    nav ul li a {
+        font-size: 16px;
+    }
+    .checkbtn {
+
+      position: fixed;
+     display: block;
+     margin-left: 800px ;
+     margin-right: 30px;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height:100vh;
+        background: peachpuff;
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: all 0.7s;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+       font-size: 20px; 
+    }
+
+    a:hover,a.active {
+        background: none;
+        color: white;
+    }
+
+    #checkbox:checked ~ ul {
+        left: 0;
+    }
+
+
+    .cta1 {
+        float: right;
+        line-height: 70px;
+        margin-right: 30px;
+        font-size: 16px
+    }
+
+    .logo {
+    width: 5em;
+    height: 5em;
+    margin-right: auto;
+    cursor: pointer;
+    }
+
+    .container-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url('Mønster.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    }
+
+
+
+
+    .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    }
+
+   
+}
+
+@media screen and (max-width: 375px){
+
+        .logo {
+    width: 4em;
+    height: 4em;
+    margin-right: auto;
+    cursor: pointer;
+    margin-left: 30px;
+    }
+
+    .checkbtn {
+
+      position: fixed;
+     display: block;
+     margin-left: 500px ;
+     margin-right: 30px;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height:100vh;
+        background: peachpuff;
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: all 0.7s;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+       font-size: 20px; 
+    }
+
+    a:hover,a.active {
+        background: none;
+        color: white;
+    }
+
+    #checkbox:checked ~ ul {
+        left: 0;
+    }
+
+
+    .cta1 {
+        float: right;
+        line-height: 70px;
+        margin-right: 30px;
+        font-size: 16px
+    }
+
     .footer-col{
     width: 100%;
     }
