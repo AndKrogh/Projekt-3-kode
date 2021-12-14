@@ -14,8 +14,9 @@ html {
 }
 
 body {
-    background-color: peachpuff;
+    background-color: hsl(28, 100%, 86%);
     font-family: 'overpass', sans-serif;
+    
 }
 
 /*navigationsbar*/
@@ -46,7 +47,7 @@ nav ul li {
 
 nav ul li a {
     margin: 15px;
-    color: black;
+    color: #45526C;
     font-size: 20px;
     padding: 18px 13px;
     border-radius: 10px ;
@@ -54,7 +55,7 @@ nav ul li a {
 }
 
 .topnav a.active, .topnav a:hover {
-    background: #5aa897;
+    background: #5AA897;
     transition: .5s;
 }
 
@@ -84,7 +85,7 @@ button {
     font-weight: bold;
     font-size: 18px;
     white-space: nowrap;
-    width: 20px;
+    width: 30px;
     height: 1px;
     padding: 18px 150px 40px 30px;
     background-color: #5aa897;
@@ -119,26 +120,32 @@ button:hover {
 
 /*forside tekst*/
 .fp {
+    padding: 60px;
+    margin: 18px;
     text-align: center;
     width: 100%;
     height: 100vh;
+   text-align: center;
     
 }
 
 .h1 {
+    color: #45526C;
     font-family: 'cabin', sans-serif;
-    font-size: 2rem;
-    margin: 3em 1em;
+    font-size: 3rem;
+    margin: 2.5em 1em;
     align-items: center;
     
 }
 
 h1 span {
+    color: #45526C;
     text-transform: uppercase;
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin: 3em 1em;
 }
+
 
 
 /*om mig*/
@@ -147,30 +154,20 @@ h1 span {
     margin: 120px 0 120px 0;
 }
 
-.container-fp {
-     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url('magical-4466597_1280.jpg');
-    background-size: cover;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px 30px 30px 30px;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-}
+
 h2 {
      font-family: 'cabin', sans-serif;
-     margin: 3em 1em;
+     margin: 1.5em 1em;
+     font-size: 1.5rem;
 }
 
 p {
     margin: 3em 1em;
+    font-size: 1.1rem;
 }
 
-
-
 .container-bg {
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url('Mønster.png');
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(255,217,184,1)), url('Mønster.png');
     background-size: cover;
     display: flex;
     margin-left: auto;
@@ -184,16 +181,16 @@ p {
 }
 
 
-.container-tekstbox2{
-width: 100%;
-height: 100%;
-justify-content: center;
 
-}
 .tekstbox1 {
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    color: #F8F5F1;
     width:60%;
+    height: 100%;
     justify-items: center;
-    background-color: #5aa897;
+    background-color: #45526C;
     border-radius: 10px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -210,53 +207,58 @@ justify-content: center;
 }
 
 
-
-
 /*Portfolio tekstboxe med billeder*/
 
-#bot {
-margin:120px 0 120px 0;
-
-}
-.tekstbox1-portfolio, .tekstbox2-portfolio, .tekstbox3-portfolio, .tekstbox4-portfolio {
+.kollage, .selvportræt2, .redesign, .køer{
+  
     display: block;
-    width:20%;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px 30px 30px;
+    width: 70%;
+    height: 60%;
+}
+
+.mobilapp {
+    display: block;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px 30px 30px;
+    width: 80%;
+    height: 50%;
+    
+}
+
+.container-tekstbox{
+   margin: 10px 0;
+   max-width: 100%;
+   overflow: auto;
+}
+
+.tekstbox {
+    margin: 5px 30px 30px 100px;
+    float: left;
     background-color: #5aa897;
+    padding: 10px;
+    width: 41%;
+    height: 800px;
     border-radius: 10px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    column-gap: 0px 30px;
+    
 }
 
-.tekstbox2-portfolio, .tekstbox4-portfolio {
-position: relative;
-left: 56%;
-width: 800px;
-}
 
-.tekstbox1-portfolio, .tekstbox3-portfolio {
-    position: relative;
-    left: 2%;
-    width: 800px;
-}
 
 .overskrift {
     text-align: center;
 }
 
 .text {
-    word-break: break-all;
+    word-break: break-word;
 }
 
-.kollage {
-    display: block;
-    justify-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px 30px 30px 30px;
-    width: 500px;
-    height: 500px;
-}
+
 
 .animation-container{
     display: block;
@@ -265,7 +267,7 @@ width: 800px;
     margin-right: auto;
     padding: 30px 30px 200px 200px;
     width: 100%;
-    height: 100%;
+    height: 60%;
 }
 
 .tyr {
@@ -288,15 +290,13 @@ width: 800px;
    100% { background-position: -1100px; }
 }
 
-.selvportræt2 {
-   display: block;
-   justify-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px 30px 30px 30px;
-    width: 650px;
-    height: 500px;
+.animation {
+    display: block;
+    color: blue;
+    margin: 60px 0;
+    font-size: 1.5rem;
 }
+
 
 
 /*Kontaktformular*/
@@ -389,7 +389,7 @@ h3::after{
 .footer-box{
     position: relative;
     background-color: #F8A488;
-    padding: 70px 0;
+    padding: 70px 50px 0 250px;
 	width: 100%;
 	margin:auto;
     height: auto;
@@ -425,7 +425,7 @@ h3::after{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #F8A488;
+	background-color: #45526C;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -440,7 +440,6 @@ h3::after{
 .footer-col ul li a{
 
 	font-size: 16px;
-	text-transform: capitalize;
 	color: #45526C;
 	text-decoration: none;
 	font-weight: 300;
@@ -463,7 +462,7 @@ h3::after{
 	height: 40px;
 	width: 40px;
 	background-color: #45526C;
-	margin:0 10px 10px 0;
+	margin:0 6px 10px 0;
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50%;
@@ -482,15 +481,17 @@ h3::after{
 
 /*Responsivitet på siden*/
 @media screen and (max-width: 1200px){
+
+    /*navigationsbar*/
     nav ul li a {
         font-size: 16px;
     }
+
     .checkbtn {
 
       position: fixed;
      display: block;
-     margin-left: 800px ;
-     margin-right: 30px;
+     margin-right: -750px;
     }
 
     ul {
@@ -526,21 +527,50 @@ h3::after{
 
 
     .cta1 {
-        float: right;
         line-height: 70px;
         margin-right: 30px;
         font-size: 16px
     }
 
     .logo {
-    width: 5em;
-    height: 5em;
+    width: 4.5em;
+    height: 4.5em;
     margin-right: auto;
     cursor: pointer;
     }
 
+    .fp {
+    padding: 70px;
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+   text-align: center;
+    
+    }
+
+    .h1 {
+        color: #45526C;
+        font-family: 'cabin', sans-serif;
+        font-size: 2rem;
+        margin: 2.5em 1em;
+        align-items: center;
+        
+    }
+
+
+
+
+    h1 span {
+        color: #45526C;
+        text-transform: uppercase;
+        display: block;
+        font-size: 1rem;
+        margin: 3em 1em;
+    }
+
     .container-bg {
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url('Mønster.png');
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(255,217,184,1)), url('Mønster.png');
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -554,59 +584,124 @@ h3::after{
         height: 200px;
     }
 
+    h2 {
+     font-family: 'cabin', sans-serif;
+     margin: 3em 1em;
+     font-size: 1.3rem;
+    }
+
+    p {
+        margin: 3em 1em;
+        font-size: 0.8rem;
+    }
+
+   
 
 
+    .kollage, .selvportræt2, .redesign, .køer{
+    
+        display: block;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 30px 30px 30px;
+        width: 70%;
+        height: 60%;
+    }
+
+    .mobilapp {
+        display: block;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 30px 30px 30px;
+        width: 80%;
+        height: 50%;
+        
+    }
+
+    .container-tekstbox{
+    margin: 10px 0;
+    max-width: 100%;
+    overflow: auto;
+    }
+
+    .tekstbox {
+        margin: 5px 30px 30px 30px;
+        float: left;
+        background-color: #5aa897;
+        padding: 10px;
+        width: 80%;
+        height: 800px;
+        border-radius: 10px;
+        
+    }
+
+
+
+    .overskrift {
+        text-align: center;
+    }
+
+    .text {
+        word-break: break-word;
+    }
+
+
+
+
+    .venstre {
+        display: none;
+    }
+
+
+    .btn{
+        width: 80%;
+        justify-content: center;
+        padding: 15px 10px 30px 10px;
+
+    }
+
+    .tekstbox {
+        margin: 5px 40px 30px 40px;
+        float: left;
+        background-color: #5aa897;
+        padding: 10px;
+        width: 90%;
+        height: 90%;
+        border-radius: 10px;
+    }
+
+    .footer-box{
+        font-size: 12px;
+        padding: 70px 20px 0 20px;
+        width: 100%;
+        margin:auto;
+        height: auto;
+    }
 
     .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
+        font-size: 12px;
+        width: 50%;
+        margin-bottom: 30px;
     }
 
 
 }
 
 @media screen and (max-width: 768px){
+
+    /*navigationsbar*/
     nav ul li a {
         font-size: 16px;
     }
-    .checkbtn {
 
+     .checkbtn {
       position: fixed;
      display: block;
-     margin-left: 800px ;
-     margin-right: 30px;
+     margin-right: -550px;
     }
-
-    ul {
-        position: fixed;
-        width: 100%;
-        height:100vh;
-        background: peachpuff;
-        top: 80px;
-        left:-100%;
-        text-align: center;
-        transition: all 0.7s;
-        z-index: 2;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a {
-       font-size: 20px; 
-    }
-
-    a:hover,a.active {
-        background: none;
-        color: white;
-    }
-
-    #checkbox:checked ~ ul {
-        left: 0;
-    }
+   
 
 
     .cta1 {
@@ -617,46 +712,101 @@ h3::after{
     }
 
     .logo {
-    width: 5em;
-    height: 5em;
+    width: 4em;
+    height: 4em;
     margin-right: auto;
+    margin-left: 30px;
     cursor: pointer;
     }
 
+
+    .fp {
+        padding: 90px;
+        margin: 16px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+     text-align: center;
+    }
+
+    .h1 {
+        color: #45526C;
+        font-family: 'cabin', sans-serif;
+        font-size: 1.8rem;
+        margin: 2.5em 1em;
+        align-items: center;
+        
+    }
+
+    h1 span {
+        color: #45526C;
+        text-transform: uppercase;
+        display: block;
+        font-size: 0.8rem;
+        margin: 3em 1em;
+    }
+
+    h2 {
+     font-family: 'cabin', sans-serif;
+     margin: 3em 1em;
+     font-size: 1rem;
+    }
+    p {
+    margin: 3em 1em;
+    font-size: 0.8rem;
+    }
+
     .container-bg {
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url('Mønster.png');
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(255,217,184,1)), url('Mønster.png');
     background-size: cover;
+        padding: 30px 0px 30px 0px;
     width: 100%;
     height: 100vh;
     }
 
+    .tekstbox {
+        margin: 5px 30px 30px 60px;
+        float: left;
+        background-color: #5aa897;
+        padding: 10px;
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+    }
 
-
+    .footer-box{
+        font-size: 12px;
+        padding: 20px 20px 0 20px;
+        width: 100%;
+        margin:auto;
+        height: auto;
+    }
+    
 
     .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
+        width: 50%;
+        margin-bottom: 30px;
     }
 
    
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
 
+    /*navigationsbar*/
         .logo {
-    width: 4em;
-    height: 4em;
+    width: 5em;
+    height: 5em;
     margin-right: auto;
     cursor: pointer;
     margin-left: 30px;
+    margin-top: 10px;
     }
 
     .checkbtn {
-
       position: fixed;
      display: block;
-     margin-left: 500px ;
-     margin-right: 30px;
+     margin-right: -60px;
     }
 
     ul {
@@ -698,21 +848,64 @@ h3::after{
         font-size: 16px
     }
 
+    .fp {
+        padding: 90px;
+        margin: 16px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+     text-align: center;
+    }
+
+    .h1 {
+        color: #45526C;
+        font-family: 'cabin', sans-serif;
+        font-size: 1.2rem;
+        margin: 2.5em 1em;
+        align-items: center;
+        
+    }
+
+    h2 {
+     font-family: 'cabin', sans-serif;
+     margin: 3em 1em;
+     font-size: 0.9rem;
+    }
+
+    p {
+    margin: 2em 1em;
+    font-size: 0.6rem;
+    }
+
+    h1 span {
+        color: #45526C;
+        text-transform: uppercase;
+        display: block;
+        font-size: 0.9rem;
+        margin: 3em 1em;
+    }
+
+    .tekstbox {
+    margin: 5px 25px 10px 25px;
+    float: left;
+    background-color: #5aa897;
+    padding: 10px;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    }
+
+    .sprite {
+    margin-left: -120px;
+    margin-right: auto;
+    padding: 30px 30px 30px 30px;
+    }
+
+	
+    
+
     .footer-col{
     width: 100%;
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
