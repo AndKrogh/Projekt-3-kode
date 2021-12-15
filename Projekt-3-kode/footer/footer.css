@@ -1,0 +1,16 @@
+
+
+.footer-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(rgb(255, 218, 185,0.3),#F8A488);
+    flex-direction: row;
+    flex-wrap: wrap;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
